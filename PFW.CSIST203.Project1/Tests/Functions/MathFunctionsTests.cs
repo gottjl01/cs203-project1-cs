@@ -239,7 +239,7 @@ namespace PFW.CSIST203.Project1.Tests.Functions
             [TestMethod]
             public void ZeroRaisedtoZeroPower()
             {
-                Assert.AreEqual(Project1.Functions.MathFunctions.ErrorMessage, MathFunctionObj.Power("0", "0"));
+                Assert.AreEqual(1M, decimal.Parse(MathFunctionObj.Power("0", "0")));
             }
 
             [TestMethod]
