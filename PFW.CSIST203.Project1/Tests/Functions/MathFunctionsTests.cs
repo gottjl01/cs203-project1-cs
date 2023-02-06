@@ -236,9 +236,10 @@ namespace PFW.CSIST203.Project1.Tests.Functions
                 Assert.AreEqual(Project1.Functions.MathFunctions.ErrorMessage, MathFunctionObj.Power("0", "-0.5"));
             }
 
+            [TestMethod]
             public void ZeroRaisedtoZeroPower()
             {
-                Assert.AreEqual(Project1.Functions.MathFunctions.ErrorMessage, MathFunctionObj.Modulus("0", "0"));
+                Assert.AreEqual(Project1.Functions.MathFunctions.ErrorMessage, MathFunctionObj.Power("0", "0"));
             }
 
             [TestMethod]
